@@ -1,0 +1,39 @@
+@import '../../common/style.scss';
+
+footer {
+    background: $color-primary;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+
+    a {
+        color: $color-bg;
+    }
+}
+
+.footer__logo {
+    font-size: 2rem;
+    color: $color-white;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    color: $color-bg;
+    display: inline-block;
+}
+
+.permalinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 2rem;
+}
+
+.footer__copyright {
+    margin-bottom: 4rem;
+    color: $color-bg;
+    font-size: 18px;
+    p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,80 @@
+@import '../../common/style.scss';
+
+.skills__container {
+    display: flex;
+    width:  100%;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skills__container > div {
+    background: $color-bg-secondary;
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: $transition;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 3rem;
+}
+.skills__container > div:hover {
+    background: transparent;
+    border-color: $color-secondary;
+    cursor: default;
+}
+
+.skills__container > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $color-primary;
+    font-size: 24px;
+}
+
+.skill__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    column-gap: 1.5rem;
+}
+
+.skill__details {
+    display: flex;
+    gap: 1rem;
+    font-size: 16px;
+}
+
+.skill__details-icon {
+    margin-top: 6px;
+    color: $color-primary; 
+}
+
+/* ========================= MEDIA QUERIES (MEDIUM) ========================= */
+@media screen and (max-width: 1024px) {
+    .skills__container {
+        flex-direction: column;
+    }
+
+    .skills__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .skill__content {
+        padding: 1rem;
+    }
+  }
+  
+/* ========================= MEDIA QUERIES (SMALL) ========================= */
+@media screen and (max-width: 600px) {
+    .skills__container {
+        gap: 1rem;
+    }
+
+    .skills__container > div {
+        width: 80%;
+        padding: 2rem 1rem;
+    }
+}
