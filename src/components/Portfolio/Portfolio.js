@@ -15,11 +15,18 @@ const Portfolio = () => {
               <img src={image} alt="software engineer" />
             </div>
             <h3>{title}</h3>
-            <div className="portfolio__item-cta">
-              <a href={github} className="btn" target="_blank" rel="noreferrer">
-                Github
-              </a>
-            </div>
+            {github && (
+              <div className="portfolio__item-cta">
+                <a
+                  href={github}
+                  className="btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+              </div>
+            )}
           </article>
         ))}
       </div>
